@@ -24,10 +24,14 @@ public class Login {
 		driver = new FirefoxDriver();
 		driver.get(string);
 		throw new io.cucumber.java.PendingException();
+		
+		
 	}
 
 	@When("user ive input1")
 	public void user_ive_input1() {
+		
+		
 		Actions ac = new Actions(driver);
 		ac.moveToElement(driver.findElement(By.id("nav-link-accountList-nav-line-1"))).click().build().perform();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -35,7 +39,6 @@ public class Login {
 		driver.findElement(By.id("ap_email")).sendKeys("dark");
 		driver.findElement(By.id("continue")).click();
 		driver.findElement(By.id("ap_password")).sendKeys("password#");
-
 		driver.findElement(By.name("rememberMe")).click();
 		driver.findElement(By.id("signInSubmit")).click();
 	}
