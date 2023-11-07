@@ -16,11 +16,11 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+@regression
 Feature: Verifying the updateion of user details
   
 
-  @tag1
+  @regression
   Scenario: updating username
     Given amazon lofin security page 
     And  loaded with your account

@@ -20,7 +20,7 @@
 Feature: user should be see their details
  
 
-  @tag1
+  @regression
   Scenario: With valid username and Password
     Given amazon loaded: "https://www.amazon.ca/"
    

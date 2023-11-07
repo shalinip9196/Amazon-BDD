@@ -20,7 +20,7 @@
 Feature: Amazon shoppingcart
   
 
-  @tag1
+  @regression
   Scenario: Shopping cart details retrieval
     Given Loaded with amazon home page "https://www.amazon.ca/"
     
